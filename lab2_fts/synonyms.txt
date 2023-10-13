@@ -1,0 +1,12 @@
+I, styczeń, sty
+II ,luty, lut
+III, marzec, mar
+IV, kwiecień, kwi
+V, maj
+VI, czerwiec, cze
+VII, lipiec, lip
+VIII, sierpień, sie
+IX, wrzesień, wrz
+X, październik, paź
+XI, listopad, lis
+XII, grudzień, gru

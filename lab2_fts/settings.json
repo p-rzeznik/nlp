@@ -1,0 +1,46 @@
+{
+  "analysis": {
+    "analyzer": {
+      "analyzer_with_synonym": {
+        "type": "custom",
+        "tokenizer": "standard",
+        "filter": [
+          "synonyms_filter",
+          "lowercase",
+          "morfologik_stem",
+          "lowercase"
+        ]
+      },
+      "analyzer_without_synonym": {
+        "type": "custom",
+        "tokenizer": "standard",
+        "filter": [
+          "lowercase",
+          "morfologik_stem",
+          "lowercase"
+        ]
+      },
+      "analyzer_without_lematization": {
+        "type": "custom",
+        "tokenizer": "standard",
+        "filter": [
+          "synonyms_filter",
+          "lowercase"
+        ]
+      },
+      "analyzer_without_synonym_and_lematization": {
+        "type": "custom",
+        "tokenizer": "standard",
+        "filter": [
+          "lowercase"
+        ]
+      }
+    },
+    "filter": {
+      "synonyms_filter": {
+        "type": "synonym",
+        "synonyms_path": "./synonyms.txt"
+      }
+    }
+  }
+}
